@@ -1,3 +1,7 @@
+body * {
+  font-family: 'Lato', sans-serif;
+}
+
 .desktop-nav {
   display: flex;
   justify-content: space-between;
@@ -89,7 +93,78 @@ nav ul li {
   color: rgba(76, 75, 75, 0.741);
   font-size: 16px;
   margin-top: 8px;
+  margin-bottom: 48px;
 }
+
+.program {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #272a31ff;
+  /* background-image: url("assets/program/beans.png"); */
+}
+
+.program h3 {
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.program .bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/program/beans.png");
+  background-size: 20px 20px;
+}
+
+.program .bg hr {
+  margin-top: 0;
+  width: 70px;
+  border: 1px solid #ec5242;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 16px;
+}
+
+.event-img {
+  width: 70px;
+  height: 70px;
+  flex: 0 1 70px;
+}
+
+.event h3 {
+  color: #ec5242;
+  flex: 0 1 120px;
+}
+
+.event p {
+  color: #fff;
+  font-size: 14px;
+  flex: 0 1 200px;
+}
+
+.program button {
+  background-color: #ec5242;
+  color: #fff;
+  border: none;
+  padding: 22px 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 75%;
+}
+
 
 @media screen and (min-width: 768px) {
   nav {
