@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato">
   </head>
-  <body>
+  <body id="home">
     <div id="menu">
       <!-- <img src="assets/images/Icon.png" class="close-btn"> -->
       <ul>
@@ -19,31 +19,37 @@
         <li><a href="about.html#sponsor" onclick="toggleMenu()">Sponsor</a></li>
       </ul>
     </div>
+    <header>
+
+    </header>
     <nav>
       <div class="logo">
         <img src="assets/intro/menu.png" class="burger" alt="">
       </div>
+      <div class="logo-desk">
+        <img src="assets/logo.png" alt="">
+      </div>
       <div class="desktop-nav">
-        <ul media="screen and (max-device-width: 768px)" class="nav-links">
+        <ul class="nav-links">
           <li class="navbar">About</li>
           <li class="navbar">Program</li>
           <li class="navbar">Join</li>
           <li class="navbar">Sponsor</li>
           <li class="navbar">News</li>
         </ul>
-        <button>
-        </button>
       </div>
     </nav>
 
     <section class="intro">
-      <p>"Hello! Programmers"</p>
-      <h1>Code & Coffee Cape Town 2023</h1>
-      <article>
-        Code & Coffee is a community of developers and aspiring developers who meet regularly to learn, share and network.
-      </article>
-      <h3>2023.05.24</h3>
-      <h5>@ Against The Grain, Bo Kaap, Cape Town</h5>
+      <div class="intro-bg">
+        <p>"Hello! Programmers"</p>
+        <h1>Code & Coffee Cape Town 2023</h1>
+        <article>
+          Code & Coffee is a community of developers and aspiring developers who meet regularly to learn, share and network.
+        </article>
+        <h3>2023.05.24</h3>
+        <h5>@ Against The Grain, Bo Kaap, Cape Town</h5>
+      </div>
     </section>
 
     <section id="program" class="program">
@@ -106,11 +112,7 @@
           </article>
         </section>
       </div>
-      <a href="about.html">
-        <button>
-          MORE
-        </button>
-      </a>
+      <button>MORE</button>
     </section>
 	<script src="main.js"></script>
   </body>
