@@ -39,6 +39,47 @@ nav {
   border: 3px solid green;
 }
 
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  display: none;
+}
+
+#menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 32px;
+  margin-left: 32px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#menu ul li {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 16px;
+  padding: 0;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu ul li a:hover {
+  color: #ec5242;
+}
+
 .logo {
   display: none;
 }

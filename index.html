@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato">
   </head>
   <body>
+    <div id="menu">
+      <!-- <img src="assets/images/Icon.png" class="close-btn"> -->
+      <ul>
+        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+        <li><a href="#program" onclick="toggleMenu()">Program</a></li>
+        <li><a href="#speakers" onclick="toggleMenu()">Speakers</a></li>
+        <li><a href="about.html#logo" onclick="toggleMenu()">Logo</a></li>
+        <li><a href="about.html#sponsor" onclick="toggleMenu()">Sponsor</a></li>
+      </ul>
+    </div>
     <nav>
       <div class="logo">
         <img src="assets/intro/menu.png" class="burger" alt="">
@@ -36,7 +46,7 @@
       <h5>@ Against The Grain, Bo Kaap, Cape Town</h5>
     </section>
 
-    <section class="program">
+    <section id="program" class="program">
       <div class="bg">
         <h3>Main Program</h3>
         <hr>
@@ -71,7 +81,7 @@
       </div>
     </section>
 
-    <section class="speakers">
+    <section id="speakers" class="speakers">
       <h3>Featured Speakers</h3>
       <hr>
       <div class="speaker">
@@ -102,6 +112,6 @@
         </button>
       </a>
     </section>
-	<script src="index.js"></script>
+	<script src="main.js"></script>
   </body>
 </html>
