@@ -190,12 +190,22 @@ hr {
   height: 100%;
   margin-bottom: 28px;
   margin-left: 16px;
+  background-image: url(assets/speakers/bg.png);
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
+}
+
+.code {
+  background-image: none;
+  background-image: url(assets/speakers/code-bg.png);
+  background-repeat: no-repeat;
+  background-size: 60px 60px;
 }
 
 .speaker img {
   width: 100px;
-  height: 100px;
-  align-self: flex-end;
+  aspect-ratio: 1/1;
+  align-self: center;
   margin-top: -8px;
   margin-left: 22px;
 }
@@ -267,6 +277,13 @@ hr {
   align-items: center;
   background-image: none;
   margin: 0;
+}
+
+.about-intro {
+  background-image: url("assets/lg-circle-bg.PNG");
+  background-size: 100px 100px;
+  background-position: 14px 243px;
+  background-repeat: no-repeat;
 }
 
 .about-intro p{
@@ -450,7 +467,7 @@ hr {
 
 .about-body footer img {
   width: 60%;
-  height: 70px;
+  height: 100px;
 }
 
 .about-body footer p {
