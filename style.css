@@ -236,34 +236,6 @@ hr {
   width: 90%;
 }
 
-.sponsors {
-  color: #fff;
-  background-color: rgb(39, 42, 49); /* this is the same color as the guideline, just rgb */
-}
-
-.sponsors h3 {
-  color: #fff;
-  margin-bottom: 8px;
-}
-
-.sponsors hr {
-  width: 20px;
-  border: 1px solid #ec5242;
-}
-
-.sponsor-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.sponsor-logo img {
-  width: 100px;
-  height: 50px;
-  aspect-ratio: 2/1;
-  padding: 16px;
-}
-
 @media screen and (min-width: 768px) {
   nav {
     background-color: #fff;
