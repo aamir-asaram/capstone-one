@@ -4,7 +4,7 @@ body * {
 
 .nav-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -14,9 +14,45 @@ body, html {
   overflow-x: hidden;
 }
 
+header {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  height: 30px;
+  width: 100%;
+}
+
+header div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin-right: 64px;
+}
+
+header i {
+  color: #fff;
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+header h6 {
+  color: #fff;
+  margin-right: 16px;
+  margin-left: 8px;
+}
+
+header *:hover {
+  color: #ec5242;
+  cursor: pointer;
+}
+
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0;
   margin: 0;
   background-image: url("assets/intro/navbar-bg.png");
@@ -24,19 +60,51 @@ nav {
   width: 100vw;
 }
 
+.desktop-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: space-around;
+  width: 80%;
+  height: 100%;
+}
+
 .nav-links {
   display: none;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  border: 3px solid hotpink;
   padding: 0;
+}
+
+#menu ul li {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  margin: 16px;
+  padding: 0;
+}
+
+.nav-links li a:hover {
+  color: #ec5242;
+}
+
+#campaign {
+  display: flex;
+  color: #ec5242;
+  border: 2px solid #ec5242;
+  padding: 8px;
+  margin-left: 16px;
+  margin-right: 64px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
 }
 
 .nav-links li {
   margin: 16px;
   padding: 0;
-  border: 3px solid green;
 }
 
 #menu {
@@ -98,7 +166,10 @@ nav {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  background-color: rgba(211, 211, 211, 0.2);
+  background-color: rgb(242, 242, 242);
+  background-image: url(assets/intro/landingImg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .intro h1 {
@@ -110,7 +181,8 @@ nav {
   -webkit-background-clip: text;
   padding: 0;
   margin-top: -16px;
-  width: 95%;
+  width: 85%;
+  height: auto;
 }
 
 .intro p {
@@ -121,11 +193,13 @@ nav {
 }
 
 .intro article {
+  display: flex;
   font-size: 14px;
   border: 4px solid white;
   padding: 12px;
   margin-top: -22px;
   margin-left: 12px;
+  background-color: rgb(242, 242, 242);
   width: 85%;
 }
 
@@ -177,6 +251,15 @@ hr {
   border: 1px solid #ec5242;
 }
 
+.events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
 .event {
   display: flex;
   align-items: center;
@@ -204,7 +287,7 @@ hr {
   flex: 0 1 200px;
 }
 
-.program button {
+.program a {
   background-color: #ec5242;
   color: #fff;
   border: none;
@@ -212,6 +295,7 @@ hr {
   margin-top: 16px;
   margin-bottom: 32px;
   width: 75%;
+  text-align: center;
 }
 
 .speakers {
@@ -479,11 +563,14 @@ hr {
 }
 
 .sponsor-logo {
+  border: 2px solid red;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
+  height: auto;
   margin-bottom: 32px;
 }
 
@@ -520,12 +607,17 @@ hr {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
 
+  header {
+    display: flex;
+  }
+
   .logo-desk {
-    display: block;
+    display: flex;
     width: 200px;
     height: 90px;
-    border: 3px solid rebeccapurple;
-    margin-right: 64px;
+    margin-right: 50px;
+    margin-left: 32px;
+    flex: 0 1 200px;
   }
 
   .logo-desk img {
@@ -537,8 +629,72 @@ hr {
     display: flex;
   }
 
+  .intro * {
+    margin-left: 20%;
+  }
+
+  .intro h1 {
+    width: 50%;
+    font-size: 52px;
+  }
+
+  .intro p {
+    margin-top: 3%;
+    width: 50%;
+    font-size: 32pxpx;
+  }
+
+  .intro article {
+    width: 45%;
+    margin-left: 20%;
+  }
+
   .intro ul{
     display: flex;
+  }
+
+  .events {
+    flex-direction: row;
+    width: 90%;
+    height: 60%;
+  }
+
+  .event {
+    margin-inline: 4px;
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+    padding: 8px;
+  }
+
+  .event:hover {
+    border: 2px solid #fff;
+    cursor: default;
+  }
+
+  .event p {
+    flex: 0 0 auto;
+    margin-top: 0;
+    width: 90%;
+    text-align: center;
+  }
+
+  .event h3 {
+    margin-top: -6px;
+    margin-bottom: 0;
+    flex: 0 0 auto;
+  }
+
+  .bg a {
+    content: "SEE THE WHOLE PROGRAM";
+    background-color: transparent;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 0;
+  }
+
+  .bg a:hover {
+    color: #ec5242;
   }
 }
 

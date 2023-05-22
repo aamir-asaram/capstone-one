@@ -7,20 +7,26 @@
     <title>Code & Coffee</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato">
-  </head>
+    <script src="https://kit.fontawesome.com/fb021b8662.js" crossorigin="anonymous"></script>  </head>
   <body id="home">
     <div id="menu">
       <!-- <img src="assets/images/Icon.png" class="close-btn"> -->
-      <ul>
-        <li><a href="about.html" onclick="toggleMenu()">About</a></li>
-        <li><a href="#program" onclick="toggleMenu()">Program</a></li>
-        <li><a href="#speakers" onclick="toggleMenu()">Speakers</a></li>
-        <li><a href="about.html#logo" onclick="toggleMenu()">Logo</a></li>
-        <li><a href="about.html#sponsor" onclick="toggleMenu()">Sponsor</a></li>
-      </ul>
+        <ul>
+          <li class="navbar"><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li class="navbar"><a href="#program" onclick="toggleMenu()">Program</a></li>
+          <li class="navbar"><a href="#speakers" onclick="toggleMenu()">Speakers</a></li>
+          <li class="navbar"><a href="about.html#logo" onclick="toggleMenu()">Logo</a></li>
+          <li class="navbar"><a href="about.html#sponsor" onclick="toggleMenu()">Sponsor</a></li>
+        </ul>
     </div>
     <header>
-
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <div>
+        <h6>English</h6>
+        <h6>My Page</h6>
+        <h6>Logout</h6>
+      </div>
     </header>
     <nav>
       <div class="logo">
@@ -31,59 +37,58 @@
       </div>
       <div class="desktop-nav">
         <ul class="nav-links">
-          <li class="navbar">About</li>
-          <li class="navbar">Program</li>
-          <li class="navbar">Join</li>
-          <li class="navbar">Sponsor</li>
-          <li class="navbar">News</li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="about.html#logo">Logo</a></li>
+          <li><a href="about.html#sponsor">Sponsor</a></li>
+          <li><a href="about.html#sponsor" id="campaign">C&C Campaign</a></li>
         </ul>
       </div>
     </nav>
 
     <section class="intro">
-      <div class="intro-bg">
-        <p>"Hello! Programmers"</p>
-        <h1>Code & Coffee Cape Town 2023</h1>
-        <article>
-          Code & Coffee is a community of developers and aspiring developers who meet regularly to learn, share and network.
-        </article>
-        <h3>2023.05.24</h3>
-        <h5>@ Against The Grain, Bo Kaap, Cape Town</h5>
-      </div>
+      <p>"Hello! Programmers"</p>
+      <h1>Code & Coffee Cape Town 2023</h1>
+      <article>
+        Code & Coffee is a community of developers and aspiring developers who meet regularly to learn, share and network.
+      </article>
+      <h3>2023.05.24</h3>
+      <h5>@ Against The Grain, Bo Kaap, Cape Town</h5>
     </section>
 
     <section id="program" class="program">
       <div class="bg">
         <h3>Main Program</h3>
         <hr>
-        <div class="event">
-          <img src="assets/program/lecture.png" class="event-img" alt="">
-          <h3>Lecture</h3>
-          <p>Listen to speakers from across the country share insides about both code and coffee.</p>
+        <div class="events">
+          <div class="event">
+            <img src="assets/program/lecture.png" class="event-img" alt="">
+            <h3>Lecture</h3>
+            <p>Listen to speakers from across the country share insides about both code and coffee.</p>
+          </div>
+          <div class="event">
+            <img src="assets/program/lecture.png" class="event-img" alt="">
+            <h3>Lecture</h3>
+            <p>Listen to speakers from across the country share insides about both code and coffee.</p>
+          </div>
+          <div class="event">
+            <img src="assets/program/lecture.png" class="event-img" alt="">
+            <h3>Lecture</h3>
+            <p>Listen to speakers from across the country share insides about both code and coffee.</p>
+          </div>
+          <div class="event">
+            <img src="assets/program/lecture.png" class="event-img" alt="">
+            <h3>Lecture</h3>
+            <p>Listen to speakers from across the country share insides about both code and coffee.</p>
+          </div>
+          <div class="event">
+            <img src="assets/program/lecture.png" class="event-img" alt="">
+            <h3>Lecture</h3>
+            <p>Listen to speakers from across the country share insides about both code and coffee.</p>
+          </div>
         </div>
-        <div class="event">
-          <img src="assets/program/lecture.png" class="event-img" alt="">
-          <h3>Lecture</h3>
-          <p>Listen to speakers from across the country share insides about both code and coffee.</p>
-        </div>
-        <div class="event">
-          <img src="assets/program/lecture.png" class="event-img" alt="">
-          <h3>Lecture</h3>
-          <p>Listen to speakers from across the country share insides about both code and coffee.</p>
-        </div>
-        <div class="event">
-          <img src="assets/program/lecture.png" class="event-img" alt="">
-          <h3>Lecture</h3>
-          <p>Listen to speakers from across the country share insides about both code and coffee.</p>
-        </div>
-        <div class="event">
-          <img src="assets/program/lecture.png" class="event-img" alt="">
-          <h3>Lecture</h3>
-          <p>Listen to speakers from across the country share insides about both code and coffee.</p>
-        </div>
-        <button>
-          Join Code & Coffee 2023
-        </button>
+          <a>Join Code & Coffee 2023</a>
       </div>
     </section>
 
