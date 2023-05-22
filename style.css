@@ -76,12 +76,23 @@ nav {
   padding: 0;
 }
 
+.close {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}
+
 #menu ul li {
   font-family: 'Lato', sans-serif;
   font-size: 24px;
   text-decoration: none;
   margin: 16px;
   padding: 0;
+}
+
+#menu ul {
+  width: 100%;
+  margin-top: 50%;
 }
 
 .nav-links li a:hover {
@@ -91,7 +102,7 @@ nav {
 #campaign {
   display: flex;
   color: #ec5242;
-  border: 2px solid #ec5242;
+  border: 3px solid #ec5242;
   padding: 8px;
   margin-left: 16px;
   margin-right: 64px;
@@ -124,8 +135,8 @@ nav {
   display: flex;
   flex-direction: column;
   list-style: none;
-  margin-top: 32px;
-  margin-left: 32px;
+  margin-top: 30%;
+  margin-left: 12%;
   padding: 0;
   height: 100%;
   width: 100%;
@@ -277,13 +288,15 @@ hr {
 
 .event h3 {
   color: #ec5242;
-  flex: 0 1 120px;
+  font-size: 18px;
+  flex: 0 1 25%;
+  margin-right: 8px;
 }
 
 .event p {
   color: #fff;
   font-size: 14px;
-  flex: 0 1 200px;
+  flex: 0 1 40%;
 }
 
 .program a {
@@ -720,6 +733,7 @@ footer p {
     margin-top: -6px;
     margin-bottom: 0;
     flex: 0 0 auto;
+    font-size: 20px;
   }
 
   .bg a {
