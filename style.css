@@ -173,8 +173,7 @@ nav {
 }
 
 .intro h1 {
-  font-size: 42px;
-  font-style: bold;
+  font-size: 38px;
   color: rgba(236, 83, 66, 0.7);
   background-image: url("assets/intro/coffee-bg.jpeg");
   /* background-size: cover; */
@@ -221,7 +220,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   background-color: #272a31ff;
   /* background-image: url("assets/program/beans.png"); */
 }
@@ -265,15 +263,16 @@ hr {
   align-items: center;
   justify-content: center;
   width: 90%;
+  max-height: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
   margin-bottom: 16px;
 }
 
 .event-img {
-  width: 70px;
-  height: 70px;
-  flex: 0 1 70px;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
 }
 
 .event h3 {
@@ -318,10 +317,11 @@ hr {
   width: 100%;
   height: 100%;
   margin-bottom: 28px;
-  margin-left: 16px;
   background-image: url(assets/speakers/bg.png);
   background-repeat: no-repeat;
   background-size: 60px 60px;
+  padding: 8px;
+  padding-top: 20px;
 }
 
 .code {
@@ -331,8 +331,15 @@ hr {
   background-size: 60px 60px;
 }
 
+.speaker-content {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  padding: 0;
+}
+
 .speaker img {
-  width: 100px;
+  width: 120px;
   aspect-ratio: 1/1;
   align-self: center;
   margin-top: -8px;
@@ -357,6 +364,7 @@ hr {
 .speaker section {
   margin-left: 16px;
   margin-top: -2px;
+  margin-bottom: 16px;
   padding: 0;
 }
 
@@ -370,7 +378,7 @@ hr {
   width: 90%;
   font-size: 12px;
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 0;
 }
 
 .speakers button {
@@ -400,10 +408,9 @@ hr {
 }
 
 .about-intro {
-  background-image: url("assets/lg-circle-bg.PNG");
-  background-size: 100px 100px;
-  background-position: 14px 243px;
-  background-repeat: no-repeat;
+  padding-block: 32px;
+  background-image: url(assets/intro/landingImg.png);
+  background-size: cover;
 }
 
 .about-intro p{
@@ -416,10 +423,10 @@ hr {
 
 .about-intro h1{
   color: #ec5242;
-  font-size: 40px;
+  font-size: 48px;
   text-align: center;
   align-self: center;
-  margin-top: 0;
+  margin-top: 40px;
 }
 
 .about-intro article {
@@ -451,6 +458,7 @@ hr {
   align-self: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 32px;
 }
 
 .about-intro a {
@@ -468,11 +476,9 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;;
   width: 100%;
   height: 100%;
   background-color: rgb(255, 255, 255);
-  margin-bottom: 16px;
 }
 
 .info h3 {
@@ -500,8 +506,9 @@ hr {
 
 .info img {
   width: 75%;
-  padding: 10px 26px 32px;
+  padding: 0 26px 32px;
   border: 1px solid #d3d3d38f;
+  margin-bottom: 8px;
 }
 
 .info .past-bg {
@@ -516,7 +523,16 @@ hr {
 .info .past-bg2 {
   background-image: none;
   background-image: url(assets/about/2019.jpeg);
-  margin-bottom: 36px;
+  margin-bottom: 64px;
+}
+
+.past-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 75px;
 }
 
 .past {
@@ -537,6 +553,10 @@ hr {
 .past p {
   margin-top: 6px;
   margin-bottom: 16px;
+}
+
+.about-body .sponsors {
+  display: none;
 }
 
 .sponsors {
@@ -563,24 +583,27 @@ hr {
 }
 
 .sponsor-logo {
-  border: 2px solid red;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 90%;
   height: auto;
   margin-bottom: 32px;
 }
 
 .sponsor-logo img {
-  width: 26%;
+  width: 90px;
   margin: 0 12px;
-  flex: 1 0 26%;
 }
 
-.about-body footer {
+.sponsor-logo img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+footer {
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -588,13 +611,21 @@ hr {
   padding: 16px;
 }
 
-.about-body footer img {
-  width: 60%;
-  height: 100px;
+.about-body footer {
+  background-color: #000;
 }
 
-.about-body footer p {
-  width: 50%;
+.about-body footer {
+  color: #fff;
+}
+
+footer img {
+  height: 100px;
+  margin-right: 66px;
+}
+
+footer p {
+  width: 30%;
   font-size: 12px;
 }
 
@@ -613,11 +644,9 @@ hr {
 
   .logo-desk {
     display: flex;
-    width: 200px;
     height: 90px;
     margin-right: 50px;
-    margin-left: 32px;
-    flex: 0 1 200px;
+    margin-left: 64px;
   }
 
   .logo-desk img {
@@ -638,6 +667,14 @@ hr {
     font-size: 52px;
   }
 
+  .intro h3 {
+    font-size: 26px;
+  }
+
+  .intro h5 {
+    font-size: 18px;
+  }
+
   .intro p {
     margin-top: 3%;
     width: 50%;
@@ -645,7 +682,7 @@ hr {
   }
 
   .intro article {
-    width: 45%;
+    width: 30%;
     margin-left: 20%;
   }
 
@@ -696,6 +733,71 @@ hr {
   .bg a:hover {
     color: #ec5242;
   }
+
+  .speaker-content {
+    justify-content: center;
+    flex-direction: row;
+    width: 65%;
+    height: 60%;
+    flex-wrap: wrap;
+  }
+
+  .speaker {
+    max-width: 400px;
+    background-position: 0 10%;
+  }
+
+  .speakers button {
+    display: none;
+  }
+
+  /*About Page*/
+  .about-intro article {
+    width: 50%;
+    font-size: 18px;
+  }
+
+  .about-intro p {
+    width: 40%;
+  }
+
+  .info img {
+    width: 350px;
+  }
+
+  .past-container {
+    flex-direction: row;
+    width: 90%;
+    height: 60%;
+  }
+
+  .past-bg {
+    max-width: 400px;
+    margin: 10px;
+  }
+
+  .info .past-bg2 {
+    margin-bottom: 16px;
+  }
+
+  .sponsors {
+    margin-top: 32px;
+  }
+
+  .sponsor-logo img{
+    width: 100px;
+  }
+
+  footer img {
+    margin-left: 16%;
+    width: 150px;
+    aspect-ratio: 1/1;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {

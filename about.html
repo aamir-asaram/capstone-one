@@ -7,43 +7,58 @@
     <title>Code & Coffee</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/cocogoose">
     <script src="https://kit.fontawesome.com/fb021b8662.js" crossorigin="anonymous"></script>
   </head>
 
   <body class="about-body">
     <div id="menu">
       <!-- <img src="assets/images/Icon.png" class="close-btn"> -->
-      <ul>
-        <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
-        <li><a href="index.html#program" onclick="toggleMenu()">Program</a></li>
-        <li><a href="index.html#speakers" onclick="toggleMenu()">Speakers</a></li>
-        <li><a href="#logo" onclick="toggleMenu()">Logo</a></li>
-        <li><a href="#sponsor" onclick="toggleMenu()">Sponsor</a></li>
-      </ul>
+        <ul>
+          <li class="navbar"><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li class="navbar"><a href="#program" onclick="toggleMenu()">Program</a></li>
+          <li class="navbar"><a href="#speakers" onclick="toggleMenu()">Speakers</a></li>
+          <li class="navbar"><a href="about.html#logo" onclick="toggleMenu()">Logo</a></li>
+          <li class="navbar"><a href="about.html#sponsor" onclick="toggleMenu()">Sponsor</a></li>
+        </ul>
     </div>
+    <header>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <div>
+        <h6>English</h6>
+        <h6>My Page</h6>
+        <h6>Logout</h6>
+      </div>
+    </header>
+    <nav>
+      <div class="logo">
+        <img src="assets/intro/menu.png" class="burger" alt="Menu Button">
+      </div>
+      <div class="logo-desk">
+        <img src="assets/logo-color.png" alt="Code and Coffee Logo">
+      </div>
+      <div class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#program">Program</a></li>
+          <li><a href="index.html#speakers">Speakers</a></li>
+          <li><a href="#logo">Logo</a></li>
+          <li><a href="#sponsor">Sponsor</a></li>
+          <li><a href="about.html#sponsor" id="campaign">C&C Campaign</a></li>
+        </ul>
+      </div>
+    </nav>
     <section class="about-intro">
-      <nav class="about-nav">
-        <div class="logo">
-          <img src="assets/intro/menu.png" class="burger" alt="">
-        </div>
-        <div>
-          <ul media="screen and (max-device-width: 768px)" class="nav-links">
-            <li class="navbar">About</li>
-            <li class="navbar">Program</li>
-            <li class="navbar">Join</li>
-            <li class="navbar">Sponsor</li>
-            <li class="navbar">News</li>
-          </ul>
-        </div>
-      </nav>
-      <p>"Hello! Programmers"</p>
-      <h1>Code & Coffee Cape Town 2023</h1>
+      <h1><b>Code & Coffee <br>Cape Town</br> 2023</b></h1>
       <article>
-        Code & Coffee is a community of developers and aspiring developers who meet regularly to learn, share and network.
+        🧑‍🤝‍🧑🧑‍🤝‍🧑 <b>We’re a community.</b> Our attendees feel like they’re a part of the group. This group is not run by a company -- it is run by a group of individual community members.
+📈🔍 <b>Of developers</b>. Or for people who work with them or want to become one.
+🐣🐓 <b>At Any Level.</b> Whether you’re aspiring, newer, or more experienced.
       </article>
       <p class="contact-head">Please contact us per email for any further questions about Code & Coffee Cape Town 2023!</p>
       <div class="contact">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">info@codecoffeect.com</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><b>info@codecoffeect.com   ></b></a>
       </div>
     </section>
 
@@ -51,23 +66,25 @@
       <h3>Code & Coffee Cape Town 2023 Logo</h3>
       <hr>
       <article>The logo of Code & Coffee Cape Town 2023 was designed by <a href="https://www.instagram.com/aaliadrawsthings">@aaliadrawsthings</a></article>
-      <img src="assets/logo.png" alt="">
+      <img src="assets/logo-color.png" alt="Code and Coffee Logo">
     </section>
 
     <section class="info">
       <h3>See the past Code & Coffee events</h3>
       <hr>
       <article>Take a look at the last two Code & Coffee events, both held at Truth Coffee</article>
-      <div class="past-bg">
-        <div class="past">
-          <h2>2022</h2>
-          <p>Coffee Cupping at C&C 2022</p>
+      <div class="past-container">
+        <div class="past-bg">
+          <div class="past">
+            <h2>2022</h2>
+            <p>Coffee Cupping at C&C 2022</p>
+          </div>
         </div>
-      </div>
-      <div class="past-bg past-bg2">
-        <div class="past">
-          <h2>2019</h2>
-          <p>Barista competition at C&C 2019</p>
+        <div class="past-bg past-bg2">
+          <div class="past">
+            <h2>2019</h2>
+            <p>Barista competition at C&C 2019</p>
+          </div>
         </div>
       </div>
     </section>
@@ -76,15 +93,14 @@
       <h3>Sponsors</h3>
       <hr>
       <div class="sponsor-logo">
-        <img src="assets/about/truth.png" alt="">
-        <img src="assets/about/bluebird.png" alt="">
-        <img src="assets/about/rosetta.png" alt="">
-        <img src="assets/about/truth.png" alt="">
-        <img src="assets/about/truth.png" alt="">
+        <img src="assets/about/truth.png" alt="Truth Coffee Cape Town Logo">
+        <img src="assets/about/bluebird.png" alt="Bluebird Coffee Roastery logo">
+        <img src="assets/about/rosetta.png" alt="Rosetta Roastery Logo">
+        <img src="assets/about/dell.png" alt="Dell Logo">
       </div>
     </section>
     <footer>
-      <img src="assets/logo.png" alt="">
+      <img src="assets/logo-white.png" alt="Code and Coffee Logo">
       <p>Code & Coffee Cape Town. Some Rights Reserved.</p>
     </footer>
     <script src="main.js"></script>
