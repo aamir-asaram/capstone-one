@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body * {
   font-family: 'Lato', sans-serif;
 }
@@ -529,6 +533,16 @@ hr {
   line-height: 22px;
 }
 
+.info article a {
+  color: #000;
+  text-decoration: none;
+}
+
+.info article a:hover {
+  color: #ec5242;
+  text-decoration: underline;
+}
+
 .info img {
   width: 75%;
   padding: 0 26px 32px;
@@ -569,6 +583,11 @@ hr {
   justify-content: center;
   align-items: center;
   color: #fff;
+}
+
+.past:hover {
+  background-color: #ec534241;
+  cursor: pointer;
 }
 
 .past h2 {
@@ -757,6 +776,11 @@ footer p {
 
   .bg a:hover {
     color: #ec5242;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    margin-top: 0;
+    cursor: pointer;
   }
 
   .speaker-content {
@@ -828,7 +852,7 @@ footer p {
   }
 
   .about-body footer {
-    background-color: #000;
+    background-color: #272a31;
     color: #fff;
   }
 

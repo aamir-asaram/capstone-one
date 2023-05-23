@@ -38,6 +38,20 @@ const speakers = [
     bio: 'A world-renowned coffee expert and champion, is a captivating figure in the specialty coffee industry, inspiring coffee enthusiasts with his knowledge, passion, and engaging storytelling.',
     catergory: 'coffee',
   },
+  {
+    name: 'Winston Thomas',
+    title: 'South African Barista Champion 2020',
+    img: 'assets/speakers/winston.png',
+    bio: 'The South African Barista Champion is a master of his craft, capturing the hearts and palates of coffee enthusiasts with his exceptional skills and creativity.',
+    catergory: 'coffee',
+  },
+  {
+    name: 'Alex Lee',
+    title: 'Java Programming Educator | YouTube',
+    img: 'assets/speakers/alex.jpeg',
+    bio: 'Alex Lee is a charismatic and knowledgeable instructor who simplifies complex programming concepts, making Java accessible and enjoyable for learners of all levels.',
+    catergory: 'code',
+  },
 ];
 
 function genSpeakers(loopTo) {
