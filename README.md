@@ -80,7 +80,6 @@ Clone this repository to your desired folder:
   cd my-folder
   git git@github.com:aamir-asaram/capstone-one.git
 ```
--
 
 ### Install
 
