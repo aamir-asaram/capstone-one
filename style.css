@@ -96,11 +96,6 @@ footer p {
   font-size: 16px;
 }
 
-.nav-links li a {
-  text-decoration: none;
-  color: #000;
-}
-
 .program a {
   background-color: #ec5242;
   color: #fff;
@@ -112,15 +107,20 @@ footer p {
   text-align: center;
 }
 
-.program a:hover {
-  background-color: #fff;
-  color: #ec5242;
-  border: 2px solid #ec5242;
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
 }
 
 .info article a {
   color: #000;
   text-decoration: none;
+}
+
+.program a:hover {
+  background-color: #fff;
+  color: #ec5242;
+  border: 2px solid #ec5242;
 }
 
 .info article a:hover {
