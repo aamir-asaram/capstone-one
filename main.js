@@ -48,7 +48,7 @@ const speakers = [
   {
     name: 'Alex Lee',
     title: 'Java Programming Educator | YouTube',
-    img: 'assets/speakers/alex.jpeg',
+    img: 'assets/speakers/alex.png',
     bio: 'Alex Lee is a charismatic and knowledgeable instructor who simplifies complex programming concepts, making Java accessible and enjoyable for learners of all levels.',
     catergory: 'code',
   },
