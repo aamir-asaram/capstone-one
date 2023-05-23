@@ -47,8 +47,6 @@ This is a showcase webpage for an event called Code & Coffee. It closely mirrors
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **Responsive layout**
 - **Dynamically generated featured section****
 
@@ -57,8 +55,6 @@ This is a showcase webpage for an event called Code & Coffee. It closely mirrors
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://aamir-asaram.github.io/capstone-one/)
 
@@ -127,8 +123,6 @@ N/A
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **Schedule Page**
 - [ ] **Ticket Page**
