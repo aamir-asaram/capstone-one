@@ -118,7 +118,6 @@ const generateSpeakers = () => {
   }
 };
 
-
 more.addEventListener('click', generateSpeakers);
 
 const speaker = document.querySelector('#speakers');

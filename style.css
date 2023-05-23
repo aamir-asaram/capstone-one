@@ -86,16 +86,6 @@ footer p {
   font-size: 12px;
 }
 
-.info article a {
-  color: #000;
-  text-decoration: none;
-}
-
-.info article a:hover {
-  color: #ec5242;
-  text-decoration: underline;
-}
-
 .about-intro a {
   width: 90%;
   text-align: center;
@@ -104,6 +94,11 @@ footer p {
   margin-left: 32px;
   color: black;
   font-size: 16px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
 }
 
 .program a {
@@ -121,6 +116,16 @@ footer p {
   background-color: #fff;
   color: #ec5242;
   border: 2px solid #ec5242;
+}
+
+.info article a {
+  color: #000;
+  text-decoration: none;
+}
+
+.info article a:hover {
+  color: #ec5242;
+  text-decoration: underline;
 }
 
 .desktop-nav {
@@ -158,11 +163,6 @@ footer p {
   padding: 0;
   height: 100%;
   width: 100%;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #000;
 }
 
 .nav-links li a:hover {
