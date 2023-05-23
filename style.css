@@ -7,12 +7,15 @@ body * {
 }
 
 .nav-links {
-  display: flex;
-  justify-content: space-around;
+  display: none;
+  justify-content: space-between;
   align-items: center;
+  list-style: none;
+  padding: 0;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -81,17 +84,8 @@ footer p {
 .desktop-nav {
   display: flex;
   justify-content: flex-end;
-  align-items: space-around;
   width: 80%;
   height: 100%;
-}
-
-.nav-links {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  padding: 0;
 }
 
 .close {
@@ -109,8 +103,14 @@ footer p {
 }
 
 #menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 30%;
+  margin-left: 12%;
+  padding: 0;
+  height: 100%;
   width: 100%;
-  margin-top: 50%;
 }
 
 .nav-links li a:hover {
@@ -149,25 +149,6 @@ footer p {
   display: none;
 }
 
-#menu ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  margin-top: 30%;
-  margin-left: 12%;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
-#menu ul li {
-  font-family: 'Lato', sans-serif;
-  font-size: 24px;
-  text-decoration: none;
-  margin: 16px;
-  padding: 0;
-}
-
 #menu ul li a {
   text-decoration: none;
   color: black;
@@ -185,7 +166,7 @@ footer p {
   display: none;
 }
 
-.intro *{
+.intro * {
   font-family: 'Lato', sans-serif;
   margin-left: 16px;
 }
@@ -205,7 +186,6 @@ footer p {
   font-size: 38px;
   color: rgba(236, 83, 66, 0.7);
   background-image: url("assets/intro/coffee-bg.jpeg");
-  /* background-size: cover; */
   -webkit-background-clip: text;
   padding: 0;
   margin-top: -16px;
@@ -250,7 +230,6 @@ footer p {
   justify-content: center;
   align-items: center;
   background-color: #272a31ff;
-  /* background-image: url("assets/program/beans.png"); */
 }
 
 .program h3 {
@@ -434,7 +413,6 @@ hr {
   color: #ec5242;
 }
 
-
 /* About Page */
 .about-body {
   margin: 0;
@@ -456,7 +434,7 @@ hr {
   background-size: cover;
 }
 
-.about-intro p{
+.about-intro p {
   color: #ec5242;
   font-size: 26px;
   text-align: center;
@@ -464,7 +442,7 @@ hr {
   margin-bottom: 8px;
 }
 
-.about-intro h1{
+.about-intro h1 {
   color: #ec5242;
   font-size: 48px;
   text-align: center;
@@ -671,8 +649,6 @@ footer {
   height: 100px;
   margin-right: 66px;
 }
-
-
 
 /* Desktop */
 @media screen and (min-width: 768px) {
