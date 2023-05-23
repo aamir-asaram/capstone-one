@@ -1,8 +1,8 @@
 const burger = document.querySelector('img.burger');
 const close = document.querySelector('.close');
 function toggleMenu() {
-    const menu = document.querySelector('#menu');
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  const menu = document.querySelector('#menu');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 }
 burger.addEventListener('click', toggleMenu);
 close.addEventListener('click', toggleMenu);
@@ -62,7 +62,7 @@ function genSpeakers(loopTo) {
   speakersSection.appendChild(title);
   speakersSection.appendChild(hr);
   const container = document.createElement('div');
-  for (let i = 0; i < loopTo; i++) {
+  for (let i = 0; i < loopTo; i += 1) {
     container.classList.add('speaker-content');
     const speakerCard = document.createElement('div');
     speakerCard.classList.add('speaker');
@@ -85,10 +85,10 @@ function genSpeakers(loopTo) {
   const arrow = document.createElement('i');
   arrow.classList.add('fas', 'fa-angle-down', 'arrow');
   if (loopTo < speakers.length) {
-  button.textContent = 'MORE';
+    button.textContent = 'MORE';
   } else {
-  button.textContent = 'LESS';
-  arrow.style.rotate = '180deg';
+    button.textContent = 'LESS';
+    arrow.style.rotate = '180deg';
   }
   button.appendChild(arrow);
   speakersSection.appendChild(button);
@@ -100,7 +100,8 @@ if (window.innerWidth >= 768) {
   document.addEventListener('DOMContentLoaded', genSpeakers(2));
 }
 
-//generate function to add more speakers on click
+// generate function to add more speakers on click
+let more = document.querySelector('#speakers button');
 const generateSpeakers = () => {
   const speakersSection = document.querySelector('#speakers');
   speakersSection.innerHTML = '';
@@ -117,14 +118,13 @@ const generateSpeakers = () => {
   }
 };
 
-let more = document.querySelector('#speakers button');
+
 more.addEventListener('click', generateSpeakers);
 
 const speaker = document.querySelector('#speakers');
 let desktop = false;
 window.addEventListener('resize', () => {
   if (window.innerWidth >= 768 && !desktop) {
-    console.log('desktop');
     desktop = true;
     speaker.innerHTML = '';
     genSpeakers(speakers.length);
@@ -132,7 +132,6 @@ window.addEventListener('resize', () => {
     more.addEventListener('click', generateSpeakers);
   } else if (window.innerWidth < 768 && desktop) {
     desktop = false;
-    console.log('mobile');
     speaker.innerHTML = '';
     genSpeakers(2);
     const more = document.querySelector('#speakers button');
