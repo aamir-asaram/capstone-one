@@ -68,11 +68,15 @@ function genSpeakers(loopTo) {
   }
   speakersSection.appendChild(container);
   const button = document.createElement('button');
+  const arrow = document.createElement('i');
+  arrow.classList.add('fas', 'fa-angle-down', 'arrow');
   if (loopTo < speakers.length) {
   button.textContent = 'MORE';
   } else {
   button.textContent = 'LESS';
+  arrow.style.rotate = '180deg';
   }
+  button.appendChild(arrow);
   speakersSection.appendChild(button);
 }
 

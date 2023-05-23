@@ -404,6 +404,12 @@ hr {
   width: 90%;
 }
 
+.arrow {
+  margin-left: 8px;
+  margin-top: -20px;
+  color: #ec5242;
+}
+
 
 /* About Page */
 .about-body {
