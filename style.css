@@ -310,6 +310,12 @@ hr {
   text-align: center;
 }
 
+.program a:hover {
+  background-color: #fff;
+  color: #ec5242;
+  border: 2px solid #ec5242;
+}
+
 .speakers {
   display: flex;
   flex-direction: column;
@@ -574,10 +580,6 @@ hr {
   margin-bottom: 16px;
 }
 
-.about-body .sponsors {
-  display: none;
-}
-
 .sponsors {
   background-color: rgb(39, 42, 49);
   display: flex;
@@ -620,6 +622,7 @@ hr {
 .sponsor-logo img:hover {
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 footer {
@@ -630,15 +633,17 @@ footer {
   padding: 16px;
 }
 
-.about-body footer {
-  background-color: #000;
-}
-
-.about-body footer {
-  color: #fff;
+footer div {
+  height: 100px;
+  margin-right: 66px;
 }
 
 footer img {
+  height: 100%;
+}
+
+.desktop {
+  display: none;
   height: 100px;
   margin-right: 66px;
 }
@@ -804,6 +809,10 @@ footer p {
     margin-top: 32px;
   }
 
+  .about-body .sponsors {
+    display: none;
+  }
+
   .sponsor-logo img{
     width: 100px;
   }
@@ -817,6 +826,21 @@ footer p {
   footer p {
     font-size: 16px;
   }
+
+  .about-body footer {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .about-body footer .mobile {
+    display: none;
+  }
+
+  .about-body footer .desktop {
+    display: block;
+  }
+
+
 
 }
 
