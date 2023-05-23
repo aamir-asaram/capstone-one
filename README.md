@@ -151,7 +151,7 @@ If you like this project please leave a star!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my sister <a href="https://www.instagram.com/aaliadrawsthings/">@aaliadrawsthings</a> for designing the logo and custom backgrounds.
+I would like to thank the original creator of the design template this web page is based on <a href="https://www.behance.net/adagio07">Cindy Shin</a>. I would also like to thank my sister <a href="https://www.instagram.com/aaliadrawsthings/">@aaliadrawsthings</a> for designing the logo and custom backgrounds.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
