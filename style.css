@@ -52,6 +52,11 @@ header h6 {
   margin-left: 8px;
 }
 
+.intro * {
+  font-family: 'Lato', sans-serif;
+  margin-left: 16px;
+}
+
 header *:hover {
   color: #ec5242;
   cursor: pointer;
@@ -81,6 +86,43 @@ footer p {
   font-size: 12px;
 }
 
+.info article a {
+  color: #000;
+  text-decoration: none;
+}
+
+.info article a:hover {
+  color: #ec5242;
+  text-decoration: underline;
+}
+
+.about-intro a {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-top: -12px;
+  margin-left: 32px;
+  color: black;
+  font-size: 16px;
+}
+
+.program a {
+  background-color: #ec5242;
+  color: #fff;
+  border: none;
+  padding: 22px 16px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  width: 75%;
+  text-align: center;
+}
+
+.program a:hover {
+  background-color: #fff;
+  color: #ec5242;
+  border: 2px solid #ec5242;
+}
+
 .desktop-nav {
   display: flex;
   justify-content: flex-end;
@@ -92,6 +134,11 @@ footer p {
   position: fixed;
   top: 30px;
   left: 30px;
+}
+
+.nav-links li {
+  margin: 16px;
+  padding: 0;
 }
 
 #menu ul li {
@@ -113,6 +160,11 @@ footer p {
   width: 100%;
 }
 
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+}
+
 .nav-links li a:hover {
   color: #ec5242;
 }
@@ -124,16 +176,6 @@ footer p {
   padding: 8px;
   margin-left: 16px;
   margin-right: 64px;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #000;
-}
-
-.nav-links li {
-  margin: 16px;
-  padding: 0;
 }
 
 #menu {
@@ -164,11 +206,6 @@ footer p {
 
 .logo-desk {
   display: none;
-}
-
-.intro * {
-  font-family: 'Lato', sans-serif;
-  margin-left: 16px;
 }
 
 .intro {
@@ -294,23 +331,6 @@ hr {
   color: #fff;
   font-size: 14px;
   flex: 0 1 40%;
-}
-
-.program a {
-  background-color: #ec5242;
-  color: #fff;
-  border: none;
-  padding: 22px 16px;
-  margin-top: 16px;
-  margin-bottom: 32px;
-  width: 75%;
-  text-align: center;
-}
-
-.program a:hover {
-  background-color: #fff;
-  color: #ec5242;
-  border: 2px solid #ec5242;
 }
 
 .speakers {
@@ -482,16 +502,6 @@ hr {
   margin-bottom: 32px;
 }
 
-.about-intro a {
-  width: 90%;
-  text-align: center;
-  margin: auto;
-  margin-top: -12px;
-  margin-left: 32px;
-  color: black;
-  font-size: 16px;
-}
-
 .info {
   display: flex;
   flex-direction: column;
@@ -523,16 +533,6 @@ hr {
   text-align: center;
   margin-bottom: 16px;
   line-height: 22px;
-}
-
-.info article a {
-  color: #000;
-  text-decoration: none;
-}
-
-.info article a:hover {
-  color: #ec5242;
-  text-decoration: underline;
 }
 
 .info img {
@@ -737,7 +737,7 @@ footer {
   }
 
   .event:hover {
-    border: 2px solid #fff;
+    outline: 1px solid #fff;
     cursor: default;
   }
 
