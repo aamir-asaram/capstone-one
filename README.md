@@ -1,12 +1,8 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="assets/logo-white.png" alt="logo" width="140"  height="auto" />
   <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -35,7 +31,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Code & Coffee [Capstone #1]] <a name="about-project"></a>
+# 📖 Code & Coffee [Capstone #1] <a name="about-project"></a>
 
 This is a showcase webpage for an event called Code & Coffee. It closely mirrors the showcase site for the 2015 CC Summit.
 
@@ -51,11 +47,8 @@ This is a showcase webpage for an event called Code & Coffee. It closely mirrors
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Responsive layout**
+- **Dynamically generated featured section****
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,9 +56,7 @@ This is a showcase webpage for an event called Code & Coffee. It closely mirrors
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://aamir-asaram.github.io/capstone-one/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +80,6 @@ Clone this repository to your desired folder:
   cd my-folder
   git git@github.com:aamir-asaram/capstone-one.git
 ```
--
 
 ### Install
 
@@ -125,15 +115,13 @@ N/A
 
 - GitHub: [@aamir-asaram](https://github.com/aamir-asaram)
 - Twitter: [@aaaaamir__](https://twitter.com/aaaaamir__)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aamir-asaram-089802213/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **Schedule Page**
 - [ ] **Ticket Page**
@@ -162,11 +150,7 @@ If you like this project please leave a star!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
+I would like to thank the original creator of the design template this web page is based on <a href="https://www.behance.net/adagio07">Cindy Shin</a>. I would also like to thank my sister <a href="https://www.instagram.com/aaliadrawsthings/">@aaliadrawsthings</a> for designing the logo and custom backgrounds.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,7 +159,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
